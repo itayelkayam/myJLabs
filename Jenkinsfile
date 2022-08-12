@@ -6,6 +6,10 @@ pipeline {
         timestamps()  // Timestamper Plugin
         disableConcurrentBuilds()
     }
+    triggers {
+        pollSCM('H/5 * * * *')
+	cron('@midnight')
+    }
     stages {
         stage('Greeting') {
             steps {
