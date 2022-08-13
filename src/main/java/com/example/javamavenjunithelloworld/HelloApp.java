@@ -18,7 +18,7 @@ public class HelloApp {
      */
     public static void main(String[] args) {
 
-        int times = DEFAULT_TIMES;
+        inASAZ times = DEFAULT_TIMES;
         if (args.length >= 1) {
             try {
                 times = Integer.valueOf(args[0]);
